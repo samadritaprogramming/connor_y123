@@ -1,0 +1,312 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fbff;
+    color:#333;
+    line-height:1.7;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+section{
+    padding:90px 10%;
+}
+
+/* ===========================
+   COLORS
+=========================== */
+
+:root{
+
+    --primary:#2563eb;
+    --primary-dark:#1e40af;
+    --light-blue:#dbeafe;
+    --white:#ffffff;
+    --dark:#1f2937;
+    --gray:#6b7280;
+    --light:#f8fbff;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn{
+
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 32px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s ease;
+
+}
+
+.primary-btn{
+
+    background:var(--primary);
+    color:white;
+
+}
+
+.primary-btn:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-3px);
+
+}
+
+.secondary-btn{
+
+    border:2px solid white;
+    color:white;
+
+}
+
+.secondary-btn:hover{
+
+    background:white;
+    color:var(--primary);
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+
+    position:fixed;
+    width:100%;
+
+    top:0;
+    left:0;
+
+    z-index:1000;
+
+}
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 10%;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 2px 15px rgba(0,0,0,.06);
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:var(--dark);
+
+}
+
+.logo span{
+
+    color:var(--primary);
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    color:var(--dark);
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--primary);
+
+}
+
+.active{
+
+    color:var(--primary)!important;
+
+}
+
+/* ===========================
+   PAGE HERO
+=========================== */
+
+.page-hero{
+
+    margin-top:90px;
+
+    text-align:center;
+
+    background:linear-gradient(135deg,#2563eb,#1e3a8a);
+
+    color:white;
+
+    padding:120px 10%;
+
+}
+
+.page-hero h1{
+
+    font-size:58px;
+
+    margin-bottom:20px;
+
+}
+
+.page-hero p{
+
+    font-size:20px;
+
+    opacity:.9;
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+/* ===========================
+   GENERAL HEADINGS
+=========================== */
+
+h2{
+
+    font-size:40px;
+
+    color:var(--dark);
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+}
+
+.section-text{
+
+    text-align:center;
+
+    color:var(--gray);
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:50px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 10%;
+
+}
+
+footer h3{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin:25px 0;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#60a5fa;
+
+}
+
+footer p{
+
+    opacity:.8;
+
+}
